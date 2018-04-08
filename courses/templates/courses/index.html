@@ -1,0 +1,23 @@
+<h1>Welcome to Scheduler Helper<h1>
+
+<h2>Please enter the courses you wish to take in the fields below</h2>
+
+This scheduler was built to parse through students' WRITTEN reviews, and <br />
+finds an ideal schedule based on the data it learned.
+
+<form action="/results/" method="post">
+{% csrf_token %}
+    
+    <label for="choice1">Course #1</label>
+	<input type="text" name="choice" id="choice1"/><br />
+	
+    <label for="choice2">Course #2</label>
+	<input type="text" name="choice" id="choice2"/><br />
+	
+    <label for="choice3">Course #3</label>
+	<input type="text" name="choice" id="choice3"/><br />
+	
+    <label for="choice4">Course #4</label>
+	<input type="text" name="choice" id="choice4"/><br />
+<input type="submit" value="results" />
+</form>
